@@ -23,13 +23,20 @@ class App extends Component {
         EDIT GOALS
         </div>
         </nav>
+        <div className="body">
         <div className="plant">
           <img src={plant} alt="plant planted in change jar"/>
         </div>
-
+        <div>
+          <h1>HERE IS LOREM IPSUM FOR START-UPS</h1>
+          <p>
+          Interaction design user experience long tail business plan stock social proof gamification series A financing scrum project churn rate incubator. Facebook technology first mover advantage gen-z scrum project strategy prototype metrics monetization bootstrapping supply chain innovator return on investment. Business-to-consumer customer hypotheses. Seed money facebook network effects release validation scrum project gen-z rockstar infrastructure iPad niche market.
+          </p>
+          </div>
+        </div>
       </body>
       <footer>
-        The Footer
+        Kenneth Cannon &copy; 2019
       </footer>
       </>
       );

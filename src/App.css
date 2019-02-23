@@ -52,6 +52,21 @@ body {
 	font-family: 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body p{
+  font-size: 3.5vh;
+  padding: 25px;
+}
+
+.body h1{
+  padding-top: 5px;
+  text-align: center;
+}
+
 body img{
   width: 50vw;
 }
@@ -62,8 +77,8 @@ body img{
 } */
 
 footer {
-  height: 6vh;
-  font-size: 20px;
+  height: 8vh;
+  font-size: 2vh;
   color: white;
   text-align: center;
   margin: 0;
@@ -124,8 +139,13 @@ body img{
   width: 100vw;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
-  font-size: 2.5vh;
+  font-size: 2vh;
   height: 8vh;
 }
 }
