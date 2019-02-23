@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './bank-ozk-logo.png';
+import plant from './plant.jpg'
 import './App.css';
 
 class App extends Component {
@@ -22,8 +23,14 @@ class App extends Component {
         EDIT GOALS
         </div>
         </nav>
+        <div>
+          <img src={plant} alt="plant planted in change jar"/>
+        </div>
 
       </body>
+      <footer>
+        The Footer
+      </footer>
       </>
       );
   }

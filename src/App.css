@@ -1,4 +1,6 @@
 html {
+  min-width: 100%;
+  height: auto;
   background-color: pink;
 }
 
@@ -8,15 +10,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-	font: 4.8vw 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+	font: 4.5vw 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
   padding: 0;
-  margin-right: 15px;
-  padding-right: 35px;
+  margin: 0;
+  padding-right: 75px;
 } 
 
 .logo {
   background-color: white;
-  padding: 24px;
+  padding: 12px;
   float: left;
   width: 25vw;
   height: auto;
@@ -36,10 +38,10 @@ nav {
   padding: .5vw 10.7vw;
 }
 
-.hover:hover{
+.hover:hover {
   background-color: #2d8079;
   margin: 0;
-  padding: .5vw 11vw;
+  padding: .5vw 10.6vw;
 }
 
 body {
@@ -49,7 +51,14 @@ body {
 }
 
 footer {
-	background-color: #4d3157;
+  height: 7.2vh;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  background-color: #0f1013;
+	/* background-color: #4d3157; */
 }
 
 @media screen and (max-width: 500px) {
