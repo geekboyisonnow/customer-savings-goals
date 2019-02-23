@@ -18,10 +18,10 @@ class App extends Component {
         Add New Goals
         </div>
         <div className="hover" id="nav-bkg">
-        View My Goals
+        Chart My Progress
         </div>
         <div className="hover" id="nav-bkg">
-        Chart All Goals
+        The Rainy Day Challenge
         </div>
         </nav>
         <div className="body">
