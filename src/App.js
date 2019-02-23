@@ -29,9 +29,9 @@ class App extends Component {
         </div>
         <div>
           <h1>HERE IS LOREM IPSUM FOR START-UPS</h1>
-          <p>
+          <blockquote>
           Interaction design user experience long tail business plan stock social proof gamification series A financing scrum project churn rate incubator. Facebook technology first mover advantage gen-z scrum project strategy prototype metrics monetization bootstrapping supply chain innovator return on investment. Business-to-consumer customer hypotheses. Seed money facebook network effects release validation scrum project gen-z rockstar infrastructure iPad niche market.
-          </p>
+          </blockquote>
           </div>
         </div>
       </body>
