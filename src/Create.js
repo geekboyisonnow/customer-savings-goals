@@ -6,24 +6,28 @@ import './App.css';
 class Create extends Component {
   render() {
     return (
-      <>
-      <body>
-        <div className="body">
-        <div className="plant">
-          <img src={plant} alt="plant planted in change jar"/>
-        </div>
-        <div className="arrow">
-          <h1>HERE IS LOREM IPSUM FOR START-UPS</h1>
-          
-          {/* <img src={arrow} alt="arrow button"/> */}
-          
-          <blockquote>
-          Interaction design user experience long tail business plan stock social proof gamification series A financing scrum project churn rate incubator. Facebook technology first mover advantage gen-z scrum project strategy prototype metrics monetization bootstrapping supply chain innovator return on investment. Business-to-consumer customer hypotheses. Seed money facebook network effects release validation scrum project gen-z rockstar infrastructure iPad niche market.
-          </blockquote>
-          </div>
-        </div>
-      </body>
-      </>
+    <>
+      
+        <form action="/new" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="goal_name"/>
+            </div>
+            <div>
+                <label for="target">Target Amount:</label>
+                <input type="text" id="target" name="target_amount"/>
+            </div>
+            <div>
+                <label for="current">Current Amount:</label>
+                <input type="text" id="current" name="current_amount"/>
+            </div>
+            <div>
+                <label for="date">Target Amount:</label>
+                <input type="date" id="date" name="target_date"/>
+            </div>
+        </form>
+      
+    </>
       );
   }
 }

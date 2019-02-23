@@ -53,7 +53,46 @@ body {
   padding: 0;
   margin: 0;
   background-color: white;
-	font-family: 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+	font: 4vh 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+.label {
+  margin: 25px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+input {
+  height: 4vh;
+  width: 25vw;
+}
+input:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+button {
+  font: 3vh 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  height: 4.5vh;
+  width: 10vw;
+  text-align: center;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  
 }
 
 .body {
@@ -153,6 +192,44 @@ body img{
 .body h1{
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px 2px;
+}
+
+#items {
+  padding: 50px 0;
+}
+
+input {
+  width: 50vw;
+}
+button {
+  min-width: 22vw;
+  font-family: -apple-system, BlinkMacSystemFont, 'Quicksilver', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
 }
 
 /* .arrow img{
