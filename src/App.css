@@ -62,7 +62,7 @@ body {
 }
 
 .body blockquote{
-  font-size: 3.5vh;
+  font-size: 3.6vh;
   padding: 0px 25px;
 }
 
@@ -74,13 +74,13 @@ body img{
   width: 50vw;
 }
 
-.arrow img{
+/* .arrow img{
   transform: rotate(270deg);
   float: right;
   padding-right: 3.5vw;
   height: auto;
   width: 6vw;
-}
+} */
 
 footer {
   height: 7.5vh;
@@ -90,7 +90,6 @@ footer {
   margin: 0;
   padding-top: 2vh;
   background-color: #0f1013;
-	/* background-color: #4d3157; */
 }
 
 @media screen and (max-width: 800px) {
@@ -156,13 +155,13 @@ body img{
   margin-bottom: 0;
 }
 
-.arrow img{
+/* .arrow img{
   transform: rotate(270deg);
   float: right;
   padding-right: 5vw;
   height: auto;
   width: 6vw;
-}
+} */
 
 .body blockquote{
   font-size: 2.5vh;
