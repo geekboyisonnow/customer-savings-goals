@@ -1,4 +1,82 @@
-.App {
+html {
+  background-color: pink;
+}
+
+header {
+  background-color: #e40046;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	font: 4.8vw 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  padding: 0;
+  margin-right: 15px;
+  padding-right: 35px;
+} 
+
+.logo {
+  background-color: white;
+  padding: 24px;
+  float: left;
+  width: 25vw;
+  height: auto;
+}
+
+nav {
+  background-color: #0f1013;
+  color: white;
+  font-size: 2vw;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bkg {
+  padding: .5vw 11.4vw;
+}
+
+.hover:hover{
+  background-color: #2d8079;
+  margin: 0;
+  padding: .5vw 11vw;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+	font-family: 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+footer {
+	background-color: #4d3157;
+}
+
+@media screen and (max-width: 500px) {
+header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	font: 7vw 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.logo {
+  float: left;
+  width: 100%;
+  width: 250px;
+  height: auto;
+}
+}
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +108,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
