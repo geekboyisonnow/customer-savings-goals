@@ -8,32 +8,12 @@ class App extends Component {
   render() {
     return (
       <>
-      <header>
-        <img align="bottom" src={logo} className="logo" alt="Bank OZK logo" />
-        <div className="mobile">Your Personal Savings Goals</div>
-      </header>
-      <body>
-        <nav>
-        <div className="hover" id="nav-bkg">
-        Add New Goals
-        </div>
-        <div className="hover" id="nav-bkg">
-        Chart My Progress
-        </div>
-        <div className="hover" id="nav-bkg">
-        The Rainy Day Challenge
-        </div>
-        </nav>
-        <div className="body">
-        <div className="plant">
-          <img src={plant} alt="plant planted in change jar"/>
-        </div>
         <form action="/new" method="post" className="row">
           <div className="column">
-            <label for="name" className="label">Name:</label>
-            <label for="target" className="label">Amount:</label>
-            <label for="current" className="label">Balance:&nbsp;&nbsp;</label>
-            <label for="date" className="label">Date:</label>
+            <label for="name" className="label">Name Your Goal:</label>
+            <label for="target" className="label">Goal Amount:</label>
+            <label for="current" className="label">Current Balance:</label>
+            <label for="date" className="label">Target Date:</label>
           </div>
           <div className="column">
             <input type="text" id="name" name="goal_name" className="label"/>
@@ -56,11 +36,6 @@ class App extends Component {
             </div>
           </div>
         </form>
-        </div>
-      </body>
-      <footer>
-        Kenneth Cannon &copy; 2019
-      </footer>
       </>
       );
   }

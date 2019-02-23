@@ -52,47 +52,64 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: white;
-	font: 4vh 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  background-color: whitesmoke;
+	font: 3.5vh 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 .label {
-  margin: 25px 0;
+  align-items: center;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-right: 10px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 5px 0;
+  justify-content: space-around;
+  margin: 0;
+  line-height: 1.5rem;
 }
 
 input {
-  height: 4vh;
+  height: 3vh;
   width: 25vw;
+  margin: 0 20px;
+  border: 1px solid grey; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 2px;
+    background: rgba(255,255,255,0.5);
 }
+
 input:focus {
   /* To give a little highlight on active elements */
   border-color: #000;
 }
 
 button {
-  font: 3vh 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-  height: 4.5vh;
-  width: 10vw;
+  font: 2.5vh 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  height: 5vh;
+  width: 8vw;
   text-align: center;
+  margin: 0 15px;
+  border-radius: 4px;
 }
 
 #submit {
   display: flex;
   justify-content: center;
-  
 }
 
 .body {
@@ -110,6 +127,7 @@ button {
 }
 
 body img{
+  float: left;
   width: 50vw;
 }
 
@@ -122,8 +140,8 @@ body img{
 } */
 
 footer {
-  height: 7.2vh;
-  font-size: 2.5vh;
+  height: 7.7vh;
+  font-size: 2vh;
   color: white;
   text-align: center;
   margin: 0;
