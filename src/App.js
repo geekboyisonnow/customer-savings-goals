@@ -9,22 +9,22 @@ class App extends Component {
       <>
       <header>
         <img align="bottom" src={logo} className="logo" alt="Bank OZK logo" />
-        <div>Your Personal Savings Goals</div>
+        <div className="mobile">Your Personal Savings Goals</div>
       </header>
       <body>
         <nav>
         <div className="hover" id="nav-bkg">
-        CREATE GOALS
+        MY GOALS
         </div>
         <div className="hover" id="nav-bkg">
-        MY GOALS
+        NEW GOAL
         </div>
         <div className="hover" id="nav-bkg">
         EDIT GOALS
         </div>
         </nav>
         <div>
-          <img src={plant} alt="plant planted in change jar"/>
+          <img src={plant} alt="plant planted in change jar" width="50%"/>
         </div>
 
       </body>

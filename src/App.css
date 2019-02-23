@@ -35,13 +35,13 @@ nav {
 }
 
 #nav-bkg {
-  padding: .5vw 10.5vw;
+  padding: .8vw 10.6vw;
 }
 
 .hover:hover {
   background-color: #2d8079;
   margin: 0;
-  padding: .5vw 10.5vw;
+  padding: .8vw 10.6vw;
 }
 
 body {
@@ -51,7 +51,7 @@ body {
 }
 
 footer {
-  height: 7.2vh;
+  height: 8vh;
   font-size: 20px;
   color: white;
   text-align: center;
@@ -63,6 +63,8 @@ footer {
 
 @media screen and (max-width: 500px) {
 header {
+  background-color: #e40046;
+  color: white;
   width: 100%;
   height: auto;
   text-align: center;
@@ -71,13 +73,35 @@ header {
   align-items: center;
 	font: 7vw 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
   padding: 0;
+  padding-bottom: 5px;
   margin: 0;
 }
 .logo {
   float: left;
-  width: 100%;
-  width: 250px;
+  width: 336px;
   height: auto;
+}
+nav {
+  text-align: center;
+  background-color: #0f1013;
+  color: white;
+  font-size: 5vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bkg {
+  border-bottom: 2px solid grey;
+  padding: 1vw;
+  margin: 0;
+}
+
+.hover:hover {
+  background-color: #2d8079;
+  margin: 0;
+  padding: 1vw 1vw;
 }
 }
 
