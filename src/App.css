@@ -35,13 +35,13 @@ nav {
 }
 
 #nav-bkg {
-  padding: .5vw 10.7vw;
+  padding: .5vw 10.5vw;
 }
 
 .hover:hover {
   background-color: #2d8079;
   margin: 0;
-  padding: .5vw 10.6vw;
+  padding: .5vw 10.5vw;
 }
 
 body {
