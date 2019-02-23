@@ -14,17 +14,17 @@ class App extends Component {
       <body>
         <nav>
         <div className="hover" id="nav-bkg">
-        MY GOALS
+        VIEW MY GOALS
         </div>
         <div className="hover" id="nav-bkg">
-        NEW GOAL
+        ADD A NEW GOAL
         </div>
         <div className="hover" id="nav-bkg">
         EDIT GOALS
         </div>
         </nav>
-        <div>
-          <img src={plant} alt="plant planted in change jar" width="50%"/>
+        <div className="plant">
+          <img src={plant} alt="plant planted in change jar"/>
         </div>
 
       </body>
