@@ -13,10 +13,10 @@ class App extends Component {
       <body>
         <nav>
         <div className="hover" id="nav-bkg">
-        HOME
+        CREATE GOALS
         </div>
         <div className="hover" id="nav-bkg">
-        CREATE GOALS  
+        MY GOALS
         </div>
         <div className="hover" id="nav-bkg">
         EDIT GOALS
