@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Home from './Home';
+import Header from './Header';
+
+import Footer from './Footer';
 import logo from './bank-ozk-logo.png';
 import plant from './plant.jpg'
-import arrow from './arrow-button.png'
 import './App.css';
 
 class App extends Component {
