@@ -91,6 +91,11 @@ section {
   font-size: 1.5vw;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -98,6 +103,16 @@ section {
   /* justify-content: space-evenly; */
   margin: 0;
   text-align: left;
+  font-size: 1.5vw;
+}
+
+.button-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  margin: 0;
+  text-align: center;
   font-size: 1.5vw;
 }
 
@@ -135,7 +150,7 @@ input:focus {
 }
 
 button {
-  font: 2vw 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  font: 1vw 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
   text-align: center;
   padding: 10px 15px;
   margin: 0;
@@ -267,6 +282,11 @@ body img{
   font-size: 2.5vw;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -277,6 +297,16 @@ body img{
   flex-direction: column;
   justify-content: space-around;
   font-size: 3vw;
+}
+
+.button-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  margin: 0;
+  text-align: center;
+  font-size: 1.5vw;
 }
 
 .item-column {
