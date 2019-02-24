@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './bank-ozk-logo.png';
 import './App.css';
 
-class Goals extends Component {
+class Progress extends Component {
 
   // CODE PEN JAVASCRIPT FOR BARS
   // $('.horizontal .progress-fill span').each(function(){
@@ -153,4 +153,4 @@ class Goals extends Component {
   }
 }
 
-export default Goals;
+export default Progress;
