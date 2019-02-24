@@ -5,14 +5,6 @@ import arrow from './arrow-button.png'
 import './App.css';
 
 class App extends Component {
-
-  // CODE PEN JAVASCRIPT FOR BARS
-  // $('.horizontal .progress-fill span').each(function(){
-  //   var percent = $(this).html();
-  //   $(this).parent().css('width', percent);
-  // });
-
-
   render() {
     return (
       <>
@@ -35,103 +27,43 @@ class App extends Component {
         The Rainy Day Challenge
         </div>
         </nav>
-        <div className="content">
-          <h1>Your Savings Goals Progress</h1>
-          <section>Bank OZK helps you save today to meet your financial goals for tomorrow.</section>
+        <div className="rainy-content">
+          <h1>The Rainy Day Challenge</h1>
+          <blockquote><p>Competition can be healthy.  So, try the Rainy Day Challenge.  Here's how it works... You pick a savings goal that you might need for a rainy day, such as; $100, $1,000, $10,000, or more.  Match your progress against others in the challenge.  See if you can beat expectations.  Are you ready for the Challenge?  Bank OZK helps you save today to meet your financial goals for tomorrow!</p></blockquote>
         
         <div className="row" id="progress">
           <div className="column">
-          <label for="name" className="label"><strong>Your Goal Name:</strong></label>
+          <label for="name" className="label"><strong>Your Goal:</strong></label>
             <div>
-            <div type="text" id="name" name="goal_name" className="label">Kid's College Fund</div>
-            <div type="text" id="name" name="goal_name" className="label">Holiday Gifts</div>
-            <div type="text" id="name" name="goal_name" className="label">Vacation</div>
-            <div type="text" id="name" name="goal_name" className="label">New Kitchen</div>
-            <div type="text" id="name" name="goal_name" className="label">Retirement</div>
+            <div type="text" id="name" name="goal_name" className="label">The Rainy Day Challenge</div>
             </div>
           </div>
           <div className="item-column">
             <label for="target" className="label"><strong>Amount:</strong></label>
             <div>
-            <div type="text" id="target" name="target_amount" className="label">$100,000.00</div>
-            <div type="text" id="target" name="target_amount" className="label">$2,000.00</div>
-            <div type="text" id="target" name="target_amount" className="label">$1,000.00</div>
             <div type="text" id="target" name="target_amount" className="label">$10,000.00</div>
-            <div type="text" id="target" name="target_amount" className="label">$4,000,000.00</div>
             </div>
           </div>
-          <div className="item-column">
+          <div className="column">
             <label for="current" className="label"><strong>Balance:</strong></label>
             <div>
-            <div type="text" id="current" name="current_amount" className="label">$9,500.00</div>
-            <div type="text" id="current" name="current_amount" className="label">$500.00</div>
-            <div type="text" id="current" name="current_amount" className="label">$100.00</div>
-            <div type="text" id="current" name="current_amount" className="label">$300.00</div>
-            <div type="text" id="current" name="current_amount" className="label">$45,000.00</div>
-            </div>
-          </div>
-          <div className="input-column">
-            <label for="date" className="label"><strong>Date:</strong></label>
-            <div>
-            <div type="date" id="date" name="target_date" className="label">01/01/2035</div>
-            <div type="date" id="date" name="target_date" className="label">10/01/2019</div>
-            <div type="date" id="date" name="target_date" className="label">05/01/2019</div>
-            <div type="date" id="date" name="target_date" className="label">01/01/2020</div>
-            <div type="date" id="date" name="target_date" className="label">06/01/2050</div>
+            <div type="text" id="current" name="current_amount" className="label">$900.00</div>
             </div>
           </div>
           <div className="item-column">
-            <label for="progress" className="label"><strong>Progress:</strong></label>
-          <div class="progress-bar horizontal">
-              <div class="progress-track" className="label">
-                  <div class="progress-fill">
-                    <span >100%</span>
-                  </div>
-              </div>
+            <label for="date" className="label"><strong>Date:</strong></label>
+            <div>
+            <div type="date" id="date" name="target_date" className="label">01/01/2020</div>
+            </div>
           </div>
-          <div class="progress-bar horizontal">
-    <div class="progress-track" className="label">
-      <div class="progress-fill">
-        <span>75%</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="progress-bar horizontal">
-    <div class="progress-track" className="label">
-      <div class="progress-fill">
-        <span>60%</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="progress-bar horizontal">
-    <div class="progress-track" className="label">
-      <div class="progress-fill">
-        <span>20%</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="progress-bar horizontal">
-    <div class="progress-track" className="label">
-      <div class="progress-fill">
-        <span>82%</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
           </div>
           <div className="content">
           <div className="buttons">
             <div className="button-column">
             <div class="button" classId="submit" className="label">
-              <button type="edit"><strong>NEXT PAGE</strong></button>
+              <button type="edit"><strong>EDIT</strong></button>
             </div>
-            <section>More Goals</section>
+            <section>Edit Goal</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">

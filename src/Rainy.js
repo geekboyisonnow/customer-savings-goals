@@ -34,40 +34,24 @@ class Progress extends Component {
           <label for="name" className="label"><strong>Your Goal Name:</strong></label>
             <div>
             <div type="text" id="name" name="goal_name" className="label">Kid's College Fund</div>
-            <div type="text" id="name" name="goal_name" className="label">Holiday Gifts</div>
-            <div type="text" id="name" name="goal_name" className="label">Vacation</div>
-            <div type="text" id="name" name="goal_name" className="label">New Kitchen</div>
-            <div type="text" id="name" name="goal_name" className="label">Retirement</div>
             </div>
           </div>
           <div className="item-column">
             <label for="target" className="label"><strong>Amount:</strong></label>
             <div>
             <div type="text" id="target" name="target_amount" className="label">$100,000.00</div>
-            <div type="text" id="target" name="target_amount" className="label">$2,000.00</div>
-            <div type="text" id="target" name="target_amount" className="label">$1,000.00</div>
-            <div type="text" id="target" name="target_amount" className="label">$10,000.00</div>
-            <div type="text" id="target" name="target_amount" className="label">$4,000,000.00</div>
             </div>
           </div>
           <div className="item-column">
             <label for="current" className="label"><strong>Balance:</strong></label>
             <div>
             <div type="text" id="current" name="current_amount" className="label">$9,500.00</div>
-            <div type="text" id="current" name="current_amount" className="label">$500.00</div>
-            <div type="text" id="current" name="current_amount" className="label">$100.00</div>
-            <div type="text" id="current" name="current_amount" className="label">$300.00</div>
-            <div type="text" id="current" name="current_amount" className="label">$45,000.00</div>
             </div>
           </div>
           <div className="item-column">
             <label for="date" className="label"><strong>Date:</strong></label>
             <div>
             <div type="date" id="date" name="target_date" className="label">01/01/2035</div>
-            <div type="date" id="date" name="target_date" className="label">10/01/2019</div>
-            <div type="date" id="date" name="target_date" className="label">05/01/2019</div>
-            <div type="date" id="date" name="target_date" className="label">01/01/2020</div>
-            <div type="date" id="date" name="target_date" className="label">06/01/2050</div>
             </div>
           </div>
           </div>
