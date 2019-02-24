@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import plant from './plant.jpg'
-import arrow from './arrow-button.png'
+import logo from './bank-ozk-logo.png';
 import './App.css';
 
 class Create extends Component {

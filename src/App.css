@@ -37,13 +37,13 @@ nav {
 }
 
 #nav-bkg {
-  padding: 1.2vw 9.5vw;
+  padding: 1.2vw 5.8vw;
 }
 
 .hover:hover {
   background-color: #2d8079;
   margin: 0;
-  padding: 1.2vw 9.5vw;
+  padding: 1.2vw 5.8vw;
 }
 
 body {
@@ -93,24 +93,31 @@ section {
 
 .buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* justify-content: space-evenly; */
   margin: 0;
   text-align: left;
+  font-size: 1.5vw;
+}
+
+.input-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0;
+  text-align: center;
   font-size: 1.5vw;
 }
 
 .button-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  /* justify-content: space-evenly; */
+  justify-content: space-between;
   margin: 0;
   text-align: center;
   font-size: 1.5vw;
@@ -128,7 +135,7 @@ section {
 
 input {
   height: 3vh;
-  width: 25vw;
+  width: 15vw;
   margin: 0 20px;
   border: 1px solid grey; 
     -webkit-box-shadow: 

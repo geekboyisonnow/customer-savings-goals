@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import logo from './bank-ozk-logo.png';
-import plant from './plant.jpg'
-import arrow from './arrow-button.png'
 import './App.css';
 
-class App extends Component {
+class Edit extends Component {
   render() {
     return (
       <>
@@ -13,7 +11,7 @@ class App extends Component {
         <div className="mobile">Your Personal Savings Goals</div>
       </header>
       <body>
-        <nav>
+      <nav>
         <div className="hover" id="nav-bkg">
         Add New Goals
         </div>
@@ -115,4 +113,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Edit;

@@ -10,6 +10,9 @@ class Navigation extends Component {
         Add New Goals
         </div>
         <div className="hover" id="nav-bkg">
+        Edit My Goals
+        </div>
+        <div className="hover" id="nav-bkg">
         Chart My Progress
         </div>
         <div className="hover" id="nav-bkg">

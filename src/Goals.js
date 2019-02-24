@@ -11,9 +11,12 @@ class Goals extends Component {
         <div className="mobile">Your Personal Savings Goals</div>
       </header>
       <body>
-        <nav>
+      <nav>
         <div className="hover" id="nav-bkg">
         Add New Goals
+        </div>
+        <div className="hover" id="nav-bkg">
+        Edit My Goals
         </div>
         <div className="hover" id="nav-bkg">
         Chart My Progress
@@ -75,7 +78,7 @@ class Goals extends Component {
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEXT PAGE</strong></button>
             </div>
-            <section>More Goals</section>
+            <section>View More Goals</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
