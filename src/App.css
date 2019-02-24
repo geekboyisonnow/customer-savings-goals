@@ -1,6 +1,4 @@
 html {
-  width: 100%;
-  height: auto;
   background-color: pink;
 }
 
@@ -53,26 +51,64 @@ body {
   padding: 0;
   margin: 0;
   background-color: whitesmoke;
-	font: 3.5vh 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+	font: 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+section {
+  padding: 5px 0;
 }
 
 .label {
-  align-items: center;
+  padding: 10px 0;
+  align-content: space-around;
+  /* align-items: center; */
 }
 
 .row {
+  text-align: right;
   display: flex;
   flex-direction: row;
+  /* justify-content: space-between; */
+  padding: 0;
+  /* margin-right: 100px; */
   justify-content: space-evenly;
-  margin-right: 10px;
+}
+
+/* .plant {
+  float: left;
+} */
+
+#progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.content {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5vw;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   margin: 0;
-  line-height: 1.5rem;
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+.item-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  margin: 0;
+  text-align: right;
+  font-size: 1.5vw;
 }
 
 input {
@@ -99,12 +135,11 @@ input:focus {
 }
 
 button {
-  font: 2.5vh 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-  height: 5vh;
-  width: 8vw;
+  font: 2vw 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
   text-align: center;
-  margin: 0 15px;
-  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 0;
+  border-radius: 10px;
 }
 
 button:hover {
@@ -145,7 +180,9 @@ body img{
 } */
 
 footer {
+  /* position: fixed; */
   height: 7.7vh;
+  /* width: 100%; */
   font-size: 2vh;
   color: white;
   text-align: center;
@@ -217,37 +254,61 @@ body img{
   margin-bottom: 0;
 }
 
-.column {
+#progress {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 5px;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+.content {
+  text-align: center;
+  padding: 0px;
+  font-size: 2.5vw;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 10px 10px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 20px 2px;
+  justify-content: space-around;
+  font-size: 3vw;
 }
 
-#items {
-  padding: 50px 0;
+.item-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  text-align: right;
+  font-size: 3vw;
+}
+
+section {
+  padding-bottom: 20px;
+}
+
+.label {
+  padding: 10px 0;
 }
 
 input {
   width: 50vw;
 }
+
 button {
-  min-width: 22vw;
-  font-family: -apple-system, BlinkMacSystemFont, 'Quicksilver', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font: 4vw 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  border-radius: 4px;
+}
+
+button:hover {
+  color: white;
+  background-color: #2d8079;
 }
 
 #submit {

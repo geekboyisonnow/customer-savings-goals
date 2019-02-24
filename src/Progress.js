@@ -12,15 +12,34 @@ class Progress extends Component {
         <div className="plant">
           <img src={plant} alt="plant planted in change jar"/>
         </div>
-        <div className="arrow">
-          <h1>HERE IS LOREM IPSUM FOR START-UPS</h1>
-          
-          {/* <img src={arrow} alt="arrow button"/> */}
-          
-          <blockquote>
-          Interaction design user experience long tail business plan stock social proof gamification series A financing scrum project churn rate incubator. Facebook technology first mover advantage gen-z scrum project strategy prototype metrics monetization bootstrapping supply chain innovator return on investment. Business-to-consumer customer hypotheses. Seed money facebook network effects release validation scrum project gen-z rockstar infrastructure iPad niche market.
-          </blockquote>
+        <div className="row">
+          <div className="row">
+            <label for="name" className="label">Name:</label>
+            <label for="target" className="label">Amount:</label>
+            <label for="current" className="label">Balance:&nbsp;&nbsp;</label>
+            <label for="date" className="label">Date:</label>
           </div>
+          <div className="row">
+            <div type="text" id="name" name="goal_name" className="label"></div>
+            <div type="text" id="target" name="target_amount" className="label"></div>
+            <div type="text" id="current" name="current_amount" className="label"></div>
+            <div type="date" id="date" name="target_date" className="label"></div>
+          </div>
+          <div className="row" classId="submit">
+            <div class="button" className="label">
+              <button type="edit">Edit</button>
+            </div>
+            <div class="button" className="label">
+              <button type="edit">Edit</button>
+            </div>
+            <div class="button" className="label">
+              <button type="edit">Edit</button>
+            </div>
+            <div class="button" className="label">
+              <button type="edit">Edit</button>
+            </div>
+          </div>
+        </div>
         </div>
       </body>
       </>

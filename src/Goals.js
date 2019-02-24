@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import logo from './bank-ozk-logo.png';
-import plant from './plant.jpg'
-import arrow from './arrow-button.png'
 import './App.css';
 
-class App extends Component {
+class Goals extends Component {
   render() {
     return (
       <>
@@ -31,7 +29,7 @@ class App extends Component {
         
         <div className="row" id="progress">
           <div className="column">
-          <label for="name" className="label"><strong>Your Goal Name:</strong></label>
+            <label for="name" className="label">Your Goal Name:</label>
             <div>
             <div type="text" id="name" name="goal_name" className="label">Kid's College Fund</div>
             <div type="text" id="name" name="goal_name" className="label">Holiday Gifts</div>
@@ -41,7 +39,7 @@ class App extends Component {
             </div>
           </div>
           <div className="item-column">
-            <label for="target" className="label"><strong>Amount:</strong></label>
+            <label for="target" className="label">Amount:</label>
             <div>
             <div type="text" id="target" name="target_amount" className="label">$100,000.00</div>
             <div type="text" id="target" name="target_amount" className="label">$2,000.00</div>
@@ -51,7 +49,7 @@ class App extends Component {
             </div>
           </div>
           <div className="item-column">
-            <label for="current" className="label"><strong>Balance:</strong></label>
+            <label for="current" className="label">Balance:</label>
             <div>
             <div type="text" id="current" name="current_amount" className="label">$9,500.00</div>
             <div type="text" id="current" name="current_amount" className="label">$500.00</div>
@@ -61,7 +59,7 @@ class App extends Component {
             </div>
           </div>
           <div className="item-column">
-            <label for="date" className="label"><strong>Date:</strong></label>
+            <label for="date" className="label">Date:</label>
             <div>
             <div type="date" id="date" name="target_date" className="label">01/01/2035</div>
             <div type="date" id="date" name="target_date" className="label">10/01/2019</div>
@@ -73,9 +71,9 @@ class App extends Component {
           </div>
           <div className="content">
             <div class="button" classId="submit" className="label">
-              <button type="edit"><strong>EDIT</strong></button>
+              <button type="edit">EDIT</button>
             </div>
-            <section>Adjust Your Goals</section>
+            <section>Click Edit to Adjust Your Goals</section>
             
           </div>
           
@@ -87,4 +85,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Goals;
