@@ -3,6 +3,14 @@ import logo from './bank-ozk-logo.png';
 import './App.css';
 
 class Goals extends Component {
+
+  // CODE PEN JAVASCRIPT FOR BARS
+  // $('.horizontal .progress-fill span').each(function(){
+  //   var percent = $(this).html();
+  //   $(this).parent().css('width', percent);
+  // });
+
+
   render() {
     return (
       <>
@@ -11,7 +19,7 @@ class Goals extends Component {
         <div className="mobile">Your Personal Savings Goals</div>
       </header>
       <body>
-      <nav>
+        <nav>
         <div className="hover" id="nav-bkg">
         Add New Goals
         </div>
@@ -25,9 +33,8 @@ class Goals extends Component {
         The Rainy Day Challenge
         </div>
         </nav>
-
         <div className="content">
-          <h1>Your Savings Goals</h1>
+          <h1>Your Savings Goals Progress</h1>
           <section>Bank OZK helps you save today to meet your financial goals for tomorrow.</section>
         
         <div className="row" id="progress">
@@ -61,7 +68,7 @@ class Goals extends Component {
             <div type="text" id="current" name="current_amount" className="label">$45,000.00</div>
             </div>
           </div>
-          <div className="item-column">
+          <div className="input-column">
             <label for="date" className="label"><strong>Date:</strong></label>
             <div>
             <div type="date" id="date" name="target_date" className="label">01/01/2035</div>
@@ -71,6 +78,50 @@ class Goals extends Component {
             <div type="date" id="date" name="target_date" className="label">06/01/2050</div>
             </div>
           </div>
+          <div className="item-column">
+            <label for="progress" className="label"><strong>Progress:</strong></label>
+          <div class="progress-bar horizontal">
+              <div class="progress-track" className="label">
+                  <div class="progress-fill">
+                    <span >100%</span>
+                  </div>
+              </div>
+          </div>
+          <div class="progress-bar horizontal">
+    <div class="progress-track" className="label">
+      <div class="progress-fill">
+        <span>75%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-bar horizontal">
+    <div class="progress-track" className="label">
+      <div class="progress-fill">
+        <span>60%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-bar horizontal">
+    <div class="progress-track" className="label">
+      <div class="progress-fill">
+        <span>20%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-bar horizontal">
+    <div class="progress-track" className="label">
+      <div class="progress-fill">
+        <span>82%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
           </div>
           <div className="content">
           <div className="buttons">
@@ -78,22 +129,23 @@ class Goals extends Component {
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEXT PAGE</strong></button>
             </div>
-            <section>View More Goals</section>
+            <section>More Goals</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
-              <button type="edit"><strong>EDIT GOALS</strong></button>
+              <button type="edit"><strong>MY GOALS</strong></button>
             </div>
-            <section>Adjust Your Goals</section>
+            <section>All Goals</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEW GOALS</strong></button>
             </div>
-            <section>Add New Goals</section>
+            <section>Add Goals</section>
             </div>
             </div>
           </div>
+        
         </div>
       </body>
     </>

@@ -34,7 +34,28 @@ class Create extends Component {
             </div>
           </div>
         </form>
-      
+        <div className="content">
+          <div className="buttons">
+            <div className="button-column">
+            <div class="button" classId="submit" className="label">
+              <button type="edit"><strong>NEXT PAGE</strong></button>
+            </div>
+            <section>More Goals</section>
+            </div>
+            <div className="button-column">
+            <div class="button" classId="submit" className="label">
+              <button type="edit"><strong>MY GOALS</strong></button>
+            </div>
+            <section>All Goals</section>
+            </div>
+            <div className="button-column">
+            <div class="button" classId="submit" className="label">
+              <button type="edit"><strong>NEW GOALS</strong></button>
+            </div>
+            <section>Add Goals</section>
+            </div>
+            </div>
+          </div>
     </>
       );
   }

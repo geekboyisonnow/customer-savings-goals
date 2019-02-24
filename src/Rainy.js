@@ -11,7 +11,7 @@ class Progress extends Component {
         <div className="mobile">Your Personal Savings Goals</div>
       </header>
       <body>
-      <nav>
+        <nav>
         <div className="hover" id="nav-bkg">
         Add New Goals
         </div>
@@ -25,7 +25,6 @@ class Progress extends Component {
         The Rainy Day Challenge
         </div>
         </nav>
-
         <div className="content">
           <h1>Your Savings Goals</h1>
           <section>Bank OZK helps you save today to meet your financial goals for tomorrow.</section>
@@ -78,22 +77,23 @@ class Progress extends Component {
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEXT PAGE</strong></button>
             </div>
-            <section>View More Goals</section>
+            <section>More Goals</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
-              <button type="edit"><strong>EDIT GOALS</strong></button>
+              <button type="edit"><strong>MY GOALS</strong></button>
             </div>
-            <section>Adjust Your Goals</section>
+            <section>All Goals</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEW GOALS</strong></button>
             </div>
-            <section>Add New Goals</section>
+            <section>Add Goals</section>
             </div>
             </div>
           </div>
+        
         </div>
       </body>
     </>

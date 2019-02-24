@@ -5,6 +5,14 @@ import arrow from './arrow-button.png'
 import './App.css';
 
 class App extends Component {
+
+  // CODE PEN JAVASCRIPT FOR BARS
+  // $('.horizontal .progress-fill span').each(function(){
+  //   var percent = $(this).html();
+  //   $(this).parent().css('width', percent);
+  // });
+
+
   render() {
     return (
       <>
@@ -27,83 +35,115 @@ class App extends Component {
         The Rainy Day Challenge
         </div>
         </nav>
-
         <div className="content">
-          <h1>Your Savings Goals</h1>
+          <h1>Your Savings Goals Progress</h1>
           <section>Bank OZK helps you save today to meet your financial goals for tomorrow.</section>
         
         <div className="row" id="progress">
-          <div className="input-column">
-            <label for="name" className="label"><strong>Your Goal Name:</strong></label>
-            
-            <input type="text" id="name" name="goal_name" className="label" placeholder="Kid's College Fund"/>
-            <input type="text" id="name" name="goal_name" className="label" placeholder="Holiday Gifts"/>
-            <input type="text" id="name" name="goal_name" className="label" placeholder="Vacation"/>
-            <input type="text" id="name" name="goal_name" className="label" placeholder="New Kitchen"/>
-            <input type="text" id="name" name="goal_name" className="label" placeholder="Retirement"/>
-            
-          </div>
-          <div className="input-column">
-            <label for="name" className="label"><strong>Goal Amount:</strong></label>
-            
-            <input type="number" min="0.01" step="0.01" max="" value="$100,000.00" id="target" name="target_amount" className="label" placeholder="$100,000.00"/>
-            <input type="number" min="0.01" step="0.01" max="" value="$2,000.00" id="target" name="target_amount" className="label" placeholder="$2,000.00"/>
-            <input type="number" min="0.01" step="0.01" max="" value="$1,000.00" id="target" name="target_amount" className="label" placeholder="$1,000.00"/>
-            <input type="number" min="0.01" step="0.01" max="" value="$10,000.00" id="target" name="target_amount" className="label" placeholder="$10,000.00"/>
-            <input type="number" min="0.01" step="0.01" max="" value="$4,000,000.00" id="target" name="target_amount" className="label" placeholder="$4,000,000.00"/>
-            
-          </div>
-          <div className="input-column">
-            <label for="name" className="label"><strong>Current Balance:</strong></label>
-            
-            <input type="number" min="0.01" step="0.01" max="" value="$9,500.00" id="current" name="current_amount" className="label" placeholder="$9,500.00"/>
-            <input type="number" min="0.01" step="0.01" max="" value="$500.00" id="current" name="current_amount" className="label" placeholder="$500.00"/>
-            <input type="number" min="0.01" step="0.01" max="" value="$100.00" id="current" name="current_amount" className="label" placeholder="$100.00"/>
-            <input type="number" min="0.01" step="0.01" max="" value="$300.00" id="current" name="current_amount" className="label" placeholder="$300.00"/>
-            <input type="number" min="0.01" step="0.01" max="" value="$45,000.00" id="current" name="current_amount" className="label" placeholder="$45,000.00"/>
-            
-          </div>
-          
-          <div className="input-column">
-            <label for="date" className="label"><strong>Target Date:</strong></label>
-            
-            <input type="date" id="date" name="target_date" className="label" 
-       value="01/01/2035"
-       min="01/01/2019" max="01/01/9999" placeholder="01/01/2035"/>
-            <input type="date" id="date" name="target_date" className="label" 
-       value="10/01/2019"
-       min="01/01/2019" max="01/01/9999" placeholder="10/01/2019"/>
-            <input type="date" id="date" name="target_date" className="label" 
-       value="05/01/2019"
-       min="01/01/2019" max="01/01/9999" placeholder="05/01/2019"/>
-            <input type="date" id="date" name="target_date" className="label" 
-       value="01/01/2020"
-       min="01/01/2019" max="01/01/9999" placeholder="01/01/2020"/>
-            <input type="date" id="date" name="target_date" className="label" 
-       value="06/01/2050"
-       min="01/01/2019" max="01/01/9999" placeholder="06/01/2050"/>
-           
+          <div className="column">
+          <label for="name" className="label"><strong>Your Goal Name:</strong></label>
+            <div>
+            <div type="text" id="name" name="goal_name" className="label">Kid's College Fund</div>
+            <div type="text" id="name" name="goal_name" className="label">Holiday Gifts</div>
+            <div type="text" id="name" name="goal_name" className="label">Vacation</div>
+            <div type="text" id="name" name="goal_name" className="label">New Kitchen</div>
+            <div type="text" id="name" name="goal_name" className="label">Retirement</div>
             </div>
+          </div>
+          <div className="item-column">
+            <label for="target" className="label"><strong>Amount:</strong></label>
+            <div>
+            <div type="text" id="target" name="target_amount" className="label">$100,000.00</div>
+            <div type="text" id="target" name="target_amount" className="label">$2,000.00</div>
+            <div type="text" id="target" name="target_amount" className="label">$1,000.00</div>
+            <div type="text" id="target" name="target_amount" className="label">$10,000.00</div>
+            <div type="text" id="target" name="target_amount" className="label">$4,000,000.00</div>
             </div>
+          </div>
+          <div className="item-column">
+            <label for="current" className="label"><strong>Balance:</strong></label>
+            <div>
+            <div type="text" id="current" name="current_amount" className="label">$9,500.00</div>
+            <div type="text" id="current" name="current_amount" className="label">$500.00</div>
+            <div type="text" id="current" name="current_amount" className="label">$100.00</div>
+            <div type="text" id="current" name="current_amount" className="label">$300.00</div>
+            <div type="text" id="current" name="current_amount" className="label">$45,000.00</div>
+            </div>
+          </div>
+          <div className="input-column">
+            <label for="date" className="label"><strong>Date:</strong></label>
+            <div>
+            <div type="date" id="date" name="target_date" className="label">01/01/2035</div>
+            <div type="date" id="date" name="target_date" className="label">10/01/2019</div>
+            <div type="date" id="date" name="target_date" className="label">05/01/2019</div>
+            <div type="date" id="date" name="target_date" className="label">01/01/2020</div>
+            <div type="date" id="date" name="target_date" className="label">06/01/2050</div>
+            </div>
+          </div>
+          <div className="item-column">
+            <label for="progress" className="label"><strong>Progress:</strong></label>
+          <div class="progress-bar horizontal">
+              <div class="progress-track" className="label">
+                  <div class="progress-fill">
+                    <span >100%</span>
+                  </div>
+              </div>
+          </div>
+          <div class="progress-bar horizontal">
+    <div class="progress-track" className="label">
+      <div class="progress-fill">
+        <span>75%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-bar horizontal">
+    <div class="progress-track" className="label">
+      <div class="progress-fill">
+        <span>60%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-bar horizontal">
+    <div class="progress-track" className="label">
+      <div class="progress-fill">
+        <span>20%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-bar horizontal">
+    <div class="progress-track" className="label">
+      <div class="progress-fill">
+        <span>82%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+          </div>
           <div className="content">
           <div className="buttons">
             <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEXT PAGE</strong></button>
             </div>
-            <section>Edit More Goals</section>
+            <section>More Goals</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>MY GOALS</strong></button>
             </div>
-            <section>View Your Goals</section>
+            <section>All Goals</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEW GOALS</strong></button>
             </div>
-            <section>Add New Goals</section>
+            <section>Add Goals</section>
             </div>
             </div>
           </div>

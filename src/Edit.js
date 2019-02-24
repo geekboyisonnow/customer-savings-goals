@@ -11,7 +11,7 @@ class Edit extends Component {
         <div className="mobile">Your Personal Savings Goals</div>
       </header>
       <body>
-      <nav>
+        <nav>
         <div className="hover" id="nav-bkg">
         Add New Goals
         </div>
@@ -28,7 +28,7 @@ class Edit extends Component {
 
         <div className="content">
           <h1>Your Savings Goals</h1>
-          <section>Bank OZK helps you save today to meet your financial goals for tomorrow.</section>
+          <p>Bank OZK helps you save today to meet your financial goals for tomorrow.</p>
         
         <div className="row" id="progress">
           <div className="input-column">
@@ -89,19 +89,19 @@ class Edit extends Component {
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEXT PAGE</strong></button>
             </div>
-            <section>Edit More Goals</section>
+            <section>More Goals</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>MY GOALS</strong></button>
             </div>
-            <section>View Your Goals</section>
+            <section>All Goals</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEW GOALS</strong></button>
             </div>
-            <section>Add New Goals</section>
+            <section>Add Goals</section>
             </div>
             </div>
           </div>
