@@ -29,7 +29,7 @@ class Goals extends Component {
         
         <div className="row" id="progress">
           <div className="column">
-            <label for="name" className="label">Your Goal Name:</label>
+          <label for="name" className="label"><strong>Your Goal Name:</strong></label>
             <div>
             <div type="text" id="name" name="goal_name" className="label">Kid's College Fund</div>
             <div type="text" id="name" name="goal_name" className="label">Holiday Gifts</div>
@@ -39,7 +39,7 @@ class Goals extends Component {
             </div>
           </div>
           <div className="item-column">
-            <label for="target" className="label">Amount:</label>
+            <label for="target" className="label"><strong>Amount:</strong></label>
             <div>
             <div type="text" id="target" name="target_amount" className="label">$100,000.00</div>
             <div type="text" id="target" name="target_amount" className="label">$2,000.00</div>
@@ -49,7 +49,7 @@ class Goals extends Component {
             </div>
           </div>
           <div className="item-column">
-            <label for="current" className="label">Balance:</label>
+            <label for="current" className="label"><strong>Balance:</strong></label>
             <div>
             <div type="text" id="current" name="current_amount" className="label">$9,500.00</div>
             <div type="text" id="current" name="current_amount" className="label">$500.00</div>
@@ -59,7 +59,7 @@ class Goals extends Component {
             </div>
           </div>
           <div className="item-column">
-            <label for="date" className="label">Date:</label>
+            <label for="date" className="label"><strong>Date:</strong></label>
             <div>
             <div type="date" id="date" name="target_date" className="label">01/01/2035</div>
             <div type="date" id="date" name="target_date" className="label">10/01/2019</div>
@@ -71,9 +71,9 @@ class Goals extends Component {
           </div>
           <div className="content">
             <div class="button" classId="submit" className="label">
-              <button type="edit">EDIT</button>
+              <button type="edit"><strong>EDIT</strong></button>
             </div>
-            <section>Click Edit to Adjust Your Goals</section>
+            <section>Adjust Your Goals</section>
             
           </div>
           
