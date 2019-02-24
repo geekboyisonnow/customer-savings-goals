@@ -73,7 +73,13 @@ class App extends Component {
           </div>
           <div className="content">
           <div className="buttons">
-          <div className="button-column">
+            <div className="button-column">
+            <div class="button" classId="submit" className="label">
+              <button type="edit"><strong>NEXT PAGE</strong></button>
+            </div>
+            <section>More Goals</section>
+            </div>
+            <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>EDIT GOALS</strong></button>
             </div>
@@ -85,7 +91,7 @@ class App extends Component {
             </div>
             <section>Add New Goals</section>
             </div>
-          </div>
+            </div>
           </div>
         
         </div>
