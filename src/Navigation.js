@@ -23,18 +23,18 @@ class Navigation extends Component {
     return (
       <Router>
         <nav>
-        <Link to="/create" className="plain"><div className="hover" id="nav-bkg">
-        Add New Goals
-        </div></Link>
-        <Link to="/edit" className="plain"><div className="hover" id="nav-bkg">
-        Edit My Goals
-        </div></Link>
-        <Link to="/progress" className="plain"><div className="hover" id="nav-bkg">
-        Chart My Progress
-        </div></Link>
-        <Link to="/challenge" className="plain"><div className="hover" id="nav-bkg">
-        The Rainy Day Challenge
-        </div></Link>
+        <div className="hover" id="nav-bkg">
+        <Link to="/create" className="plain">Add New Goals</Link>
+        </div>
+        <div className="hover" id="nav-bkg">
+        <Link to="/edit" className="plain">Edit My Goals</Link>
+        </div>
+        <div className="hover" id="nav-bkg">
+        <Link to="/progress" className="plain">Chart My Progress</Link>
+        </div>
+        <div className="hover" id="nav-bkg">
+        <Link to="/challenge" className="plain">The Rainy Day Challenge</Link>
+        </div>
         </nav>
       </Router>
       );
