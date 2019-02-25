@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import plant from './plant.jpg'
 import './App.css';
 
-class Home extends Component {
+class Error extends Component {
   constructor(props) {
     super(props)
 
@@ -14,7 +14,7 @@ class Home extends Component {
     return (
       <Router>
         <div className="body">
-      <div className="home-content">
+      <div className="content">
         
         <div>
           <img src={plant} alt="plant planted in change jar"/>
@@ -33,4 +33,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Error;

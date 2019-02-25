@@ -1,40 +1,22 @@
 import React, { Component } from 'react';
-import logo from './bank-ozk-logo.png';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 
 class Challenge extends Component {
   render() {
     return (
-      <>
-      <header>
-        <img align="bottom" src={logo} className="logo" alt="Bank OZK logo" />
-        <div className="mobile">Your Personal Savings Goals</div>
-      </header>
-      <body>
-        <nav>
-        <div className="hover" id="nav-bkg">
-        Add New Goals
-        </div>
-        <div className="hover" id="nav-bkg">
-        Edit My Goals
-        </div>
-        <div className="hover" id="nav-bkg">
-        Chart My Progress
-        </div>
-        <div className="hover" id="nav-bkg">
-        The Rainy Day Challenge
-        </div>
-        </nav>
-        <div className="rainy-content">
+      <Router>
+        <div className="body">
+        <div className="challenge-content">
           <h1>The Rainy Day Challenge</h1>
-          <blockquote><p>Competition can be healthy.  So, try the Rainy Day Challenge.  Here's how it works... You pick a savings goal that you might need for a rainy day, such as; $100, $1,000, $10,000, or more.  Match your progress against others in the challenge.  See if you can beat expectations.  Are you ready for the Challenge?  Bank OZK helps you save today to meet your financial goals for tomorrow!</p></blockquote>
+          <section className="challenge-section">Competition can be healthy.  So, try the Rainy Day Challenge.  Here's how it works... You pick a savings goal that you might need for a rainy day, such as; $100, $1,000, $10,000, or more.  Match your progress against others in the challenge.  See if you can beat expectations.  Are you ready for the Challenge?  Bank OZK helps you save today to meet your financial goals for tomorrow!</section>
         </div>
         <div className="content">
-        <div className="row" id="progress">
+        <div className="challenge-row" id="progress">
           <div className="column">
           <label for="name" className="label"><strong>Your Goal:</strong></label>
             <div>
-            <div type="text" id="name" name="goal_name" className="label">The Rainy Day Challenge</div>
+            <div type="text" id="name" name="goal_name" className="label">Rainy Day Challenge</div>
             </div>
           </div>
           <div className="input-column">
@@ -56,7 +38,7 @@ class Challenge extends Component {
             </div>
           </div>
           </div>
-          <div className="content">
+          <div className="content" id="inch">
           <div className="buttons">
             <div className="button-column">
             <div class="button" classId="submit" className="label">
@@ -68,20 +50,20 @@ class Challenge extends Component {
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>MY GOALS</strong></button>
             </div>
-            <section>All Goals</section>
+            <section>View All Goals</section>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
-              <button type="edit"><strong>NEW GOALS</strong></button>
+              <button type="edit"><strong>ADD GOALS</strong></button>
             </div>
-            <section>Add Goals</section>
+            <section>Add More Goals</section>
             </div>
             </div>
           </div>
         
         </div>
-      </body>
-    </>
+      </div>
+      </Router>
       );
   }
 }

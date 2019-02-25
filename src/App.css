@@ -28,6 +28,7 @@ header {
 }
 
 nav {
+  height: 8.8vh;
   background-color: #0f1013;
   color: white;
   font-size: 1.5vw;
@@ -35,6 +36,11 @@ nav {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+}
+
+.plain {
+  text-decoration: none;
+  color: white;
 }
 
 #nav-bkg {
@@ -47,7 +53,7 @@ nav {
   padding: 1.2vw 5.8vw;
 }
 
-body {
+.body {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -55,49 +61,86 @@ body {
 	font: 'Quicksand', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-.body {
-  min-height: 80vh;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
+.text {
+  padding-bottom: 5px;
 }
 
 section {
-  padding: 5px 0;
+  padding-top: 11px;
+  padding-bottom: 12px;
+}
+
+#inch {
+  padding-top: 26px;
+}
+
+#smidge {
+  padding: 10px;
+}
+
+.challenge-section {
+  padding: 20px;
+  padding-right: 50px;
+  font-size: 1.5vw;
 }
 
 .label {
-  padding: 10px 0;
+  padding: 10px 15px;
   align-content: space-around;
-  /* align-items: center; */
+  text-align: right;
 }
 
 .row {
   text-align: right;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   padding: 0;
-  /* margin-right: 100px; */
   justify-content: space-evenly;
 }
 
-/* .plant {
-  float: left;
-} */
+.challenge-row {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: space-around;
+}
 
 #progress {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 15px;
+  padding: 0 15px;
+}
+
+.progress {
+  padding-bottom: 5px;
 }
 
 .content {
+  align-items: center;
   text-align: center;
-  padding: 10px;
+  padding-bottom: 20px;
   font-size: 1.5vw;
+}
+
+.challenge-content {
+  align-items: center;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.home-content {
+  align-items: center;
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+.button-content {
+  text-align: center;
+  padding: 2px;
+  padding-bottom: 50px;
+  margin: 0;
 }
 
 .rainy-content {
@@ -151,7 +194,7 @@ section {
 
 input {
   height: 2vh;
-  width: 15vw;
+  width: 10vw;
   margin: 0 20px;
   border: 1px solid grey; 
     -webkit-box-shadow: 
@@ -185,23 +228,22 @@ button:hover {
   background-color: #2d8079;
 }
 
-#submit {
-  display: flex;
-  justify-content: center;
+p {
+  font-size: 3vh;
+  text-align: left;
+  line-height: 7vh;
+  padding-right: 50px;
 }
 
-.body blockquote{
-  font-size: 3.6vh;
-  padding: 0px 25px;
-}
-
-.body h1{
-  text-align: center;
+.body h2 {
+  margin: 0;
+  padding-top: 20px;
 }
 
 body img{
   float: left;
-  width: 50vw;
+  width: 48vw;
+  padding-right: 50px;
 }
 
 /* .arrow img{
@@ -213,9 +255,7 @@ body img{
 } */
 
 footer {
-  /* position: fixed; */
-  height: 7.7vh;
-  /* width: 100%; */
+  height: 6vh;
   font-size: 2vh;
   color: white;
   text-align: center;

@@ -1,35 +1,16 @@
 import React, { Component } from 'react';
-import logo from './bank-ozk-logo.png';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 
 class Edit extends Component {
   render() {
     return (
-      <>
-      <header>
-        <img align="bottom" src={logo} className="logo" alt="Bank OZK logo" />
-        <div className="mobile">Your Personal Savings Goals</div>
-      </header>
-      <body>
-        <nav>
-        <div className="hover" id="nav-bkg">
-        Add New Goals
-        </div>
-        <div className="hover" id="nav-bkg">
-        Edit My Goals
-        </div>
-        <div className="hover" id="nav-bkg">
-        Chart My Progress
-        </div>
-        <div className="hover" id="nav-bkg">
-        The Rainy Day Challenge
-        </div>
-        </nav>
+      <Router>
+      <div className="body">
 
         <div className="content">
-          <h1>Your Savings Goals</h1>
-          <p>Bank OZK helps you save today to meet your financial goals for tomorrow.</p>
-        
+          <h2>Edit My Savings Goals</h2>
+        <div  id="inch">
         <div className="row" id="progress">
           <div className="input-column">
             <label for="name" className="label"><strong>Your Goal Name:</strong></label>
@@ -83,32 +64,33 @@ class Edit extends Component {
            
             </div>
             </div>
-          <div className="content">
-          <div className="buttons">
+          <div className="home-content" id="inch">
+          <div className="buttons" id="inch">
             <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEXT PAGE</strong></button>
             </div>
-            <section>More Goals</section>
+            <div>More Goals</div>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>MY GOALS</strong></button>
             </div>
-            <section>All Goals</section>
+            <div>View All Goals</div>
             </div>
             <div className="button-column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>NEW GOALS</strong></button>
             </div>
-            <section>Add Goals</section>
+            <div>Add Goals</div>
             </div>
             </div>
           </div>
         
         </div>
-      </body>
-    </>
+        </div>
+    </div>
+    </Router>
       );
   }
 }
