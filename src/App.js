@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from './Header';
+import Header from './Header'
+import Title from './Title'
 import Navigation from './Navigation'
 import Home from './Home';
 import Challenge from './Challenge'
@@ -26,9 +27,11 @@ this.state = true
     return (
       
       <Router>
-        
-        <div class="body">
+        <>
         <Header />
+        <Title />
+        <div className="body">
+        
         <Navigation />
         <Switch>
         <Route exact path="/" component={Home} />
@@ -40,6 +43,7 @@ this.state = true
         </Switch>
         <Footer />
       </div>
+      </>
       </Router>
       );
   }

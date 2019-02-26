@@ -12,7 +12,7 @@ class Home extends Component {
 
   render() {
     return (
-      <Router>
+      <>
         <div className="body">
       <div className="home-content">
         
@@ -28,7 +28,7 @@ class Home extends Component {
           </div>
         </div>
       </div>
-      </Router>
+      </>
       );
   }
 }

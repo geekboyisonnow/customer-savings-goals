@@ -5,13 +5,14 @@ import './App.css';
 class Challenge extends Component {
   render() {
     return (
-      <Router>
         <div className="body">
-        <div className="challenge-content">
-          <h1>The Rainy Day Challenge</h1>
+        <div className="rainy-content">
+          <h2>The Rainy Day Challenge</h2>
+          <div className="rainy-content">
           <section className="challenge-section">Competition can be healthy.  So, try the Rainy Day Challenge.  Here's how it works... You pick a savings goal that you might need for a rainy day, such as; $100, $1,000, $10,000, or more.  Match your progress against others in the challenge.  See if you can beat expectations.  Are you ready for the Challenge?  Bank OZK helps you save today to meet your financial goals for tomorrow!</section>
         </div>
-        <div className="content">
+        
+       
         <div className="challenge-row" id="progress">
           <div className="column">
           <label for="name" className="label"><strong>Your Goal:</strong></label>
@@ -38,32 +39,28 @@ class Challenge extends Component {
             </div>
           </div>
           </div>
-          <div className="content" id="inch">
+          <div>
+         
+          <div className="challenge">
           <div className="buttons">
-            <div className="button-column">
+            <div className="column">
             <div class="button" classId="submit" className="label">
               <button type="edit"><strong>EDIT GOAL</strong></button>
             </div>
             <section>Edit This Goal</section>
             </div>
-            <div className="button-column">
+            <div className="column">
             <div class="button" classId="submit" className="label">
-              <button type="edit"><strong>MY GOALS</strong></button>
+              <button type="edit"><strong>SUBMIT GOAL</strong></button>
             </div>
-            <section>View All Goals</section>
+            <div>Enter Challenge!</div>
             </div>
-            <div className="button-column">
-            <div class="button" classId="submit" className="label">
-              <button type="edit"><strong>ADD GOALS</strong></button>
-            </div>
-            <section>Add More Goals</section>
+            
             </div>
             </div>
           </div>
-        
-        </div>
-      </div>
-      </Router>
+          </div>
+          </div>
       );
   }
 }

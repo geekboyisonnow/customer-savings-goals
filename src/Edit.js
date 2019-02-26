@@ -5,12 +5,14 @@ import './App.css';
 class Edit extends Component {
   render() {
     return (
-      <Router>
+      <>
       <div className="body">
 
         <div className="content">
+        <div>
           <h2>Edit My Savings Goals</h2>
-        <div  id="inch">
+          </div>
+        <div>
         <div className="row" id="progress">
           <div className="input-column">
             <label for="name" className="label"><strong>Your Goal Name:</strong></label>
@@ -64,33 +66,28 @@ class Edit extends Component {
            
             </div>
             </div>
-          <div className="home-content" id="inch">
-          <div className="buttons" id="inch">
+            
+          <div className="edit-content">
+          <div className="buttons">
             <div className="button-column">
-            <div class="button" classId="submit" className="label">
+            <div class="button" classId="submit" className="button-label">
               <button type="edit"><strong>NEXT PAGE</strong></button>
             </div>
-            <div>More Goals</div>
             </div>
+            
             <div className="button-column">
-            <div class="button" classId="submit" className="label">
-              <button type="edit"><strong>MY GOALS</strong></button>
-            </div>
-            <div>View All Goals</div>
-            </div>
-            <div className="button-column">
-            <div class="button" classId="submit" className="label">
+            <div class="button" classId="submit" className="button-label">
               <button type="edit"><strong>NEW GOALS</strong></button>
             </div>
-            <div>Add Goals</div>
+            </div>
+            </div>
             </div>
             </div>
           </div>
         
         </div>
-        </div>
-    </div>
-    </Router>
+        
+    </>
       );
   }
 }

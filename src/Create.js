@@ -13,9 +13,9 @@ class Create extends Component {
   render() {
 
     return (
-      <Router>
+      <>
         <div className="body">
-    <div className="content" id="smidge">
+    <div className="content">
           <h2>Create A New Savings Goals</h2>
           <section>Bank OZK helps you save today to meet your financial goals for tomorrow.</section>
      </div>
@@ -24,29 +24,29 @@ class Create extends Component {
           <div className="column">
             <label for="name" className="label">Goal Name:</label>
             <label for="target" className="label">Goal Amount:</label>
-            <label for="current" className="label">Current Balance:</label>
+            <label for="current" className="label">Balance:</label>
             <label for="date" className="label">Target Date:</label>
           </div>
           <div className="column">
-            <input type="text" id="name" name="goal_name" className="label"/>
-            <input type="text" id="target" name="target_amount" className="label"/>
-            <input type="text" id="current" name="current_amount" className="label"/>
-            <input type="date" id="date" name="target_date" className="label"/>
+            <input type="text" id="name" name="goal_name" className="input-label"/>
+            <input type="text" id="target" name="target_amount" className="input-label"/>
+            <input type="text" id="current" name="current_amount" className="input-label"/>
+            <input type="date" id="date" name="target_date" className="input-label"/>
           </div>
           </form> 
           
           
           <div className="button-content">
-            <div id="smidge">
+            <div className="create">
               <button type="submit"><strong>CREATE</strong></button>
-            </div>
+            
             <section>Click to Create Your Goal</section>
           </div>
-            
+          </div>
             
             </div>
             </div>
-          </Router>
+          </>
       );
   }
 }

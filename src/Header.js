@@ -6,14 +6,14 @@ import './App.css';
 class Header extends Component {
   render() {
     return (
-      <Router>
+      <>
       <header>
       <Link to="/" className="plain">
         <img align="bottom" src={logo} className="logo" alt="Bank OZK logo" />
         </Link>
-        <div className="mobile">Your Personal Savings Goals</div>
+        
       </header>
-      </Router>
+      </>
       );
   }
 }

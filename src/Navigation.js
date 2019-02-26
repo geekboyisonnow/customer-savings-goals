@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Create from './Create'
-import Edit from './Edit'
-import Home from './'
-import Challenge from './Challenge'
-import Progress from './Progress'
+// import Create from './Create'
+// import Edit from './Edit'
+// import Home from './'
+// import Challenge from './Challenge'
+// import Progress from './Progress'
 import './App.css';
 
 class Navigation extends Component {
@@ -12,31 +12,27 @@ class Navigation extends Component {
     super(props)
 
     this.props = {
-      new: './create',
-      edit: './edit',
-      home: './',
-      progress: './progress'
     }
     
   }
   render() {
     return (
-      <Router>
-        <nav>
-        <div className="hover" id="nav-bkg">
-        <Link to="/create" className="plain">Add New Goals</Link>
+      <>
+        <div className="nav">
+        <Link to="/create" className="plain"><div className="hover" id="nav-bkg">
+        Add New Goals
+        </div></Link>
+        <Link to="/edit" className="plain"><div className="hover" id="nav-bkg">
+        Edit My Goals
+        </div></Link>
+        <Link to="/progress" className="plain"><div className="hover" id="nav-bkg">
+        Chart My Progress
+        </div></Link>
+        <Link to="/challenge" className="plain"><div className="hover" id="nav-bkg">
+        The Rainy Day Challenge
+        </div></Link>
         </div>
-        <div className="hover" id="nav-bkg">
-        <Link to="/edit" className="plain">Edit My Goals</Link>
-        </div>
-        <div className="hover" id="nav-bkg">
-        <Link to="/progress" className="plain">Chart My Progress</Link>
-        </div>
-        <div className="hover" id="nav-bkg">
-        <Link to="/challenge" className="plain">The Rainy Day Challenge</Link>
-        </div>
-        </nav>
-      </Router>
+      </>
       );
   }
 }
