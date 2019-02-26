@@ -123,6 +123,15 @@ section {
   justify-content: space-evenly;
 }
 
+
+.row-flex {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: space-around;
+}
+
 .challenge-row {
   text-align: right;
   display: flex;
@@ -191,6 +200,15 @@ section {
 }
 
 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0;
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+.mobile-column {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

@@ -101,7 +101,7 @@ class Progress extends Component {
           </div>
           
     </div>
-          <div className="edit-content">
+          <div className="content">
           <div className="buttons">
             <div className="button-column">
             <div class="button" classId="submit" className="button-label">
