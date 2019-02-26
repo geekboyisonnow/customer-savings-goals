@@ -5,63 +5,67 @@ import './App.css';
 class Challenge extends Component {
   render() {
     return (
-        <div className="body">
-        <div className="rainy-content">
-          <h2>The Rainy Day Challenge</h2>
-          <div className="rainy-content">
-          <section className="challenge-section">Competition can be healthy.  So, try the Rainy Day Challenge.  Here's how it works... You pick a savings goal that you might need for a rainy day, such as; $100, $1,000, $10,000, or more.  Match your progress against others in the challenge.  See if you can beat expectations.  Are you ready for the Challenge?  Bank OZK helps you save today to meet your financial goals for tomorrow!</section>
-        </div>
+        <>
         
-       
-        <div className="challenge-row" id="progress">
-          <div className="column">
-          <label for="name" className="label"><strong>Your Goal:</strong></label>
-            <div>
-            <div type="text" id="name" name="goal_name" className="label">Rainy Day Challenge</div>
-            </div>
+          <h2>The Rainy Day Challenge</h2>
+                
+        
+<div className="mobile-column">
+<div className="row-flex">
+          <label for="name" className="input-label"><strong>Goal:</strong></label>
+          
+          <label for="target" className="input-label" ><strong>Amount:</strong></label>
+
+          <label for="current" className="input-label" ><strong>Balance:</strong></label>
+
+          <label for="date" className="input-label"><strong>Date:</strong></label>
           </div>
-          <div className="input-column">
-            <label for="target" className="label"><strong>Goal Amount:</strong></label>
-            <div>
-            <input type="number" min="0.01" step="0.01" max="" value="$10,000.00" id="target" name="target_amount" className="label" placeholder="$10,000.00"/>
-            </div>
+
+   
+          
+            
+           
+            <div className="row-flex">
+            <div type="text" id="name" name="goal_name" className="input-label" >Rainy Day Challenge</div>
+            <input type="number" min="0.01" step="0.01" max="" value="$10,000.00" id="target" name="target_amount" className="input-label" placeholder="$10,000.00"/>
+            <div type="text" id="current" name="current_amount" className="input-label" >$500.00</div>
+            <div type="date" id="date" name="target_date" className="input-label" >01/01/2035</div>
+            <label className="input-label" ><strong>Progress:</strong></label>
+          <div class="progress-bar horizontal">
+              <div class="progress-track" className="input-label" >
+                  <div class="progress-fill">
+                    <span >10%</span>
+                  </div>
+              </div>
           </div>
-          <div className="input-column">
-            <label for="current" className="label"><strong>Current Balance:</strong></label>
-            <div>
-            <input type="number" min="0.01" step="0.01" max="" value="$300.00" id="current" name="current_amount" className="label" placeholder="$300.00"/>
-            </div>
-          </div>
-          <div className="column">
-            <label for="date" className="label"><strong>Due Date:</strong></label>
-            <div>
-            <div type="date" id="date" name="target_date" className="label">01/01/2020</div>
-            </div>
+          <div class="progress-bar horizontal">
+    <div class="progress-track" className="input-label" >
+      <div class="progress-fill">
+        <span>75%</span>
+      </div>
           </div>
           </div>
-          <div>
-         
-          <div className="challenge">
+          <div className="row-flex">
           <div className="buttons">
-            <div className="column">
-            <div class="button" classId="submit" className="label">
-              <button type="edit"><strong>EDIT GOAL</strong></button>
+            <div className="button-column">
+            <div class="button" classId="submit" className="button-label">
+              <button type="edit"><strong>NEXT PAGE</strong></button>
             </div>
-            <section>Edit This Goal</section>
-            </div>
-            <div className="column">
-            <div class="button" classId="submit" className="label">
-              <button type="edit"><strong>SUBMIT GOAL</strong></button>
-            </div>
-            <div>Enter Challenge!</div>
             </div>
             
+            <div className="button-column">
+            <div class="button" classId="submit" className="button-label">
+              <button type="edit"><strong>EDIT GOALS</strong></button>
             </div>
             </div>
-          </div>
-          </div>
-          </div>
-      );
+            </div>
+            </div>
+            </div>
+</div>
+
+</>
+
+);
   }
 }
 
