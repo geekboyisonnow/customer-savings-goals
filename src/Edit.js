@@ -11,6 +11,7 @@ class Edit extends Component {
         <div className="content">
         <div>
           <h2>Edit My Savings Goals</h2>
+          <section></section>
           </div>
         <div>
         <div className="row" id="progress">
@@ -71,13 +72,17 @@ class Edit extends Component {
           <div className="buttons">
             <div className="button-column">
             <div class="button" classId="submit" className="button-label">
-              <button type="edit"><strong>NEXT PAGE</strong></button>
+              <button type="edit"><strong>BACK</strong></button>
             </div>
             </div>
-            
             <div className="button-column">
             <div class="button" classId="submit" className="button-label">
-              <button type="edit"><strong>NEW GOALS</strong></button>
+              <button type="submit"><strong>NEW</strong></button>
+          </div>
+          </div>
+            <div className="button-column">
+            <div class="button" classId="submit" className="button-label">
+              <button type="edit"><strong>NEXT</strong></button>
             </div>
             </div>
             </div>

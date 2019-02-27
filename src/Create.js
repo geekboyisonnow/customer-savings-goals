@@ -18,7 +18,7 @@ class Create extends Component {
     <div className="content">
           <h2>Create A New Savings Goals</h2>
           <section>Bank OZK helps you save today to meet your financial goals for tomorrow.</section>
-     </div>
+     
      <div className="column">
       <form action="/new" method="post" className="row">
           <div className="column">
@@ -34,13 +34,13 @@ class Create extends Component {
             <input type="date" id="date" name="target_date" className="input-label"/>
           </div>
           </form> 
-          
+          </div>
           
           <div className="button-content">
             <div className="create">
               <button type="submit"><strong>CREATE</strong></button>
             
-            <section>Click to Create Your Goal</section>
+            <section>Click HERE to Create Your New Goal!</section>
           </div>
           </div>
             

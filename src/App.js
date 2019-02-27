@@ -28,10 +28,11 @@ this.state = true
       
       <Router>
         <>
+        <div className="header">
         <Header />
         <Title />
+        </div>
         <div className="body">
-        
         <Navigation />
         <Switch>
         <Route exact path="/" component={Home} />

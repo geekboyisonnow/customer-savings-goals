@@ -14,7 +14,7 @@ class Progress extends Component {
   render() {
     return (
       <>
-      <div className="body">
+      
       <div className="content">
           <h2 className="progress">Savings Goals Progress</h2>        
         <div className="row">
@@ -99,25 +99,29 @@ class Progress extends Component {
   </div>
 </div>
           </div>
+          </div>
+    
           
-    </div>
           <div className="content">
           <div className="buttons">
             <div className="button-column">
             <div class="button" classId="submit" className="button-label">
-              <button type="edit"><strong>NEXT PAGE</strong></button>
+              <button type="edit"><strong>BACK</strong></button>
             </div>
             </div>
-            
+          <div className="button-column">
+            <div class="button" classId="submit" className="button-label">
+              <button type="submit"><strong>EDIT</strong></button>
+          </div>
+          </div>
             <div className="button-column">
             <div class="button" classId="submit" className="button-label">
-              <button type="edit"><strong>EDIT GOALS</strong></button>
+              <button type="edit"><strong>NEXT</strong></button>
             </div>
             </div>
             </div>
-            </div>
-        
-    </div>
+            </div> 
+    
     </>
       );
   }
