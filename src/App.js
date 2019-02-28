@@ -8,11 +8,6 @@ import Challenge from './Challenge'
 import Edit from './Edit'
 import Create from './Create'
 import Progress from './Progress'
-// import { Create } from './Create'
-// import { Edit } from './Edit'
-// import { Goals } from './Goals'
-// import { Challenge } from './Challenge'
-// import { Progress } from './Progress'
 import Footer from './Footer';
 import Error from './Error'
 import './App.css';
