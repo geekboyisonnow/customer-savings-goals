@@ -8,10 +8,6 @@ header {
   background-color: white;
 }
 
-.header {
-
-}
-
 .mobile {
   background-color: #e40046;
   color: white;
@@ -24,8 +20,7 @@ header {
 
 .logo {
   background-color: white;
-  padding: 10px;
-  float: left;
+  padding: 0px;
   width: 25vw;
   height: auto;
 }
@@ -350,8 +345,8 @@ text-align: center;
 }
 
 .logo {
-  margin: 5px;
-  width: 92vw;
+  margin: 0px;
+  width: 85vw;
   height: auto;
 }
 
